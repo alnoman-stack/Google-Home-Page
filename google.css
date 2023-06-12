@@ -1,0 +1,235 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+}
+section{
+   position: relative;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+
+}
+section header{
+   position: absolute;
+   top: 0;
+   width: 100%;
+   display: flex;
+   justify-content: flex-end;
+   padding: 20px;
+}
+section header ul{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+section header ul li{
+   list-style: none;
+   margin-left: 20px;
+}
+section header ul li a{
+   color: #111;
+   text-decoration: none;
+   font-size: 13px;
+}
+section header ul li button{
+   background: #4584ef;
+   border: none;
+   outline: none;
+   padding: 8px 14px;
+   border-radius: 3px;
+   font-size: 14px;
+   /* font-weight: bold; */
+   color: #fff;
+   cursor: pointer;
+   letter-spacing: .9px;
+}
+section .main{
+   width: 580px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+section .main .search_box{
+   position: relative;
+   width: 100%;
+   margin-top: 20px;
+}
+section .main .search_box .search{
+   width: 100%;
+   padding: 13px;
+   padding-left: 45px;
+   padding-right: 60px;
+   border: 1px solid #b5b8bc;
+   outline: none;
+   font-size: 16px;
+   border-radius: 30px;
+   -webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+   -ms-border-radius: 30px;
+   -o-border-radius: 30px;
+}
+section .main .search_box .icons{
+   position: absolute;
+   top: 0;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 12px 20px;
+   pointer-events: none;
+}
+section .main .buttons{
+   margin-top: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+section .main .buttons button{
+   margin: 0 5px;
+   padding: 6px 10px;
+   font-size: 14px;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   border-radius: 3px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -ms-border-radius: 3px;
+   -o-border-radius: 3px;
+}
+section .main .buttons button:hover{
+   border-radius: 1px solid #ccc;
+   -webkit-border-radius: 1px solid #ccc;
+   -moz-border-radius: 1px solid #ccc;
+   -ms-border-radius: 1px solid #ccc;
+   -o-border-radius: 1px solid #ccc;
+}
+section .main .lang{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 10px;
+   font-size: 12px;
+}
+section .main .lang a{
+   text-decoration: none;
+}
+section .footer{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   background: #e2dddd;
+   width: 100%;
+   color: #5f6368;
+   font-size: 14px;
+}
+section .footer .btom_pera{
+   padding: 20px 30px;
+   color: #000000;
+}
+section .footer .row{
+   display: flex;
+   justify-content: space-between;
+   border-top: 1px solid #fff;
+}
+section .footer .row ul{
+   display: flex;
+   padding: 20px 30px;
+}
+section .footer .row ul li{
+   list-style: none;
+
+}
+section .footer .row ul li a{
+   text-decoration: none;
+   font-size: 14px;
+   color: #000000;
+   margin-right: 20px;
+}
+
+/* Desktop view */
+@media only screen and (min-width: 1080px) {
+
+
+}
+
+/* Tablet view */
+@media screen and (min-width:769px) and (max-width: 1023px) {
+   
+   section{
+      background: #202124;
+      color: #fff;
+   }
+    section header ul li a {
+      color: #fff;
+    }
+   section header ul li a img{
+      background-color: #fff;
+   }
+   section header ul li button {
+      background-color: #047e64;
+   }
+   section .main .search_box{
+      width: 100%;
+   }
+   .main .lang a{
+      color: whitesmoke;
+   }
+   section .footer{
+      background: #171717;
+      color: whitesmoke;
+   }
+    section .footer .row ul li a{
+      color: whitesmoke;
+   }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+   /* section header{
+      width: 100%;
+   } */
+   section .main .search_box{
+      width: 70%;
+   }
+   section header ul li button {
+      background-color: #960ee4;
+   }
+   .main .google_img{
+      width: 180px;
+   }
+   .main .search_box .buttons button{
+      border: .1px solid #cbced2;
+      color: #050505;
+   }
+   section .footer .row ul{
+      display: flex;
+      flex-direction: column;
+   }
+   section .footer{
+      background: #2a2929;
+      color: whitesmoke;
+   }
+   section .footer .row{
+      flex-direction: column;
+
+   }
+   section .footer .row ul{
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+      flex-direction: row;
+      margin-top: 10px;  
+   } 
+   section .footer .row ul li a{
+      color: whitesmoke;
+      letter-spacing:1.2px;
+      
+   }
+
+}
