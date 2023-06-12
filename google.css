@@ -187,6 +187,10 @@ section .footer .row ul li a{
     section .footer .row ul li a{
       color: whitesmoke;
    }
+
+   .footer .btom_pera p{
+      color: #fff;
+   }
 }
 
 /* Mobile view */
@@ -213,7 +217,10 @@ section .footer .row ul li a{
    }
    section .footer{
       background: #2a2929;
-      color: whitesmoke;
+      
+   }
+   .footer .btom_pera p{
+      color: #fff;
    }
    section .footer .row{
       flex-direction: column;
